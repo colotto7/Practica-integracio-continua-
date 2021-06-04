@@ -11,6 +11,6 @@ test:
         -pip install coverage
         -pylint main.py
         -python test.py
-        -coverage run test.py
+        -coverage run
         -coverage report -m
         
