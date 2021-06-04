@@ -1,7 +1,4 @@
-default: 
-    image: python: 3.9.1
-
-test: 
+test:
     stage: test
     script: 
         -apt-get update -qy
@@ -11,6 +8,6 @@ test:
         -pip install coverage
         -pylint main.py
         -python test.py
-        -coverage run
+        -coverage run test.py
         -coverage report -m
         
